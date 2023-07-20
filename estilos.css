@@ -7,12 +7,42 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color:  #fbfbfb;
+    background-color:  #f8f8f8;
     font-size: 18px;
 }
 
+#container {
+    display: inline-flex;
+    background-color: #f8f8f8;
+    position: relative;
+    width: 4rem;
+    height: 1.5rem;
+ 
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
+    margin: 0 auto;
+
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -22px;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: scale(.7);
+    background-color:rgba(120, 59, 8, 3);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+                -3px -3px 8px #fff;
+
+}              
 header{
-    display: flex;
+display: flex;
+
     width: 100%;
     height: 90px;
     margin-bottom: 50px;
@@ -21,32 +51,41 @@ header{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow:1px 1px 8px grey;
+    box-shadow:1px 1px 8px rgba(120, 59, 8, 3);
  
     
 }
 
+
+
 .head{
     display: flex;
+  
 }
 
 header nav a {
     text-decoration: none;
-    margin-right: 20px;
+margin-right: 30px;
 
     color: black;
 font-family: Arial, Helvetica, sans-serif;
-    
-  
+ 
+display: inline-flex;
+
+ 
 }
+
 
 header nav a:hover {
     color: white;
-    background-color: gray;
+    background-color: rgba(120, 59, 8, 0.5);
     border-radius: 5px;
     padding: 5px;
 }
 
+nav a .barra{
+    margin-right: px;
+}
 
 .logo{
     width: 220px;
@@ -105,14 +144,15 @@ h1{
 }
  
 
-.primerP{
+p.primerP{
+    
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     line-height: 1,2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
+    font-size: 1rem;
 }
 
 .descarga{
@@ -122,7 +162,7 @@ h1{
 
 
 #boton{
-    background-color:#af599e;
+    background-color:rgba(120, 59, 8, 3);
    border-radius: 8px;
    text-decoration: none;
    color: aliceblue;
@@ -135,12 +175,12 @@ h1{
 #boton:hover{
     color:black;
     background-color: white;
-    border: solid 1px crimson;
+    border: solid 1px rgba(120, 59, 8, 0.5);
 }
 
 
 .hablemos{
-    background-color:rgba(175, 89, 158, 0.3);
+    background-color:rgba(120, 59, 8, 0.5);
     border-radius: 5%;
     text-align: center;
     margin-left: 10px;
@@ -155,11 +195,17 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
-.segundoP{
+p.segundoP{
     margin-bottom: 20px;
-   line-height: 1,2;
+   line-height: 2;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    text-align: justify;
+   font-size: 1.2rem;
+
+}
+p.segundoP span{
+    font-weight: bold;
+    color: #f8f8f8;
 }
 
 .iconos{
@@ -177,14 +223,92 @@ footer{
     width: 100%;
     height: 90px;
     text-align: center;
-    background-color:#af599e;
+    background-color:rgba(120, 59, 8, 3);
     color: white;
     padding-top: 8px;
     font-family: Arial, Helvetica, sans-serif;
     
 
 }
+#container.active .toggle{
+    left: 40px;
+}
+body.active{
+    background-color: #0a0a0a;
+    color: #cecece;
+    
+}
+body.active nav a.barra{
+    color: #f8f8f8;
+  
+}
+body.active .hablemos h3{
+    filter: invert();
+}
+body.active .hablemos{
+    background-color: rgb(37, 33, 33);
+}
 
+body.active .hablemos p.segundoP{
+    color: #f8f8f8;
+    background-color:rgb(37, 33, 33);
+}
+body.active footer{
+    background-color: #0f0f0f;
+    color: #cecece;
+    box-shadow:1px 1px 8px chartreuse;
+}
+body.active .iconos{
+    filter: invert();
+}
+body.active .logo{
+    filter: invert();
+}
+
+body.active .primerP span{
+    color: chartreuse;
+}
+
+body.active #boton:hover{
+    color:chartreuse;
+    border: solid 1px chartreuse;
+}
+body.active .descarga #boton{
+
+    background-color: gray;
+   
+}
+
+body.active header{
+    box-shadow:1px 1px 8px chartreuse;
+}
+body.active header nav a:hover{
+    background-color: gray;
+    border: solid 1px chartreuse;
+}
+
+body.active .toggle{
+    background-color: gray;
+}
+
+/*body.active .nav{
+    background-color: rgb(14, 13, 13);
+    border: solid 1px  chartreuse;
+}*/
+body.active #abrir .abrir-menu .fa-solid fa-bars{
+    color:chartreuse;
+}
+
+body.active .abrir-menu{
+    color: chartreuse; ;
+}
+
+
+span{
+    color: darkred;
+    font-weight: 700;
+    font-style: italic;
+}
 
     @media (max-width:700px) {
         .imagenCentro{

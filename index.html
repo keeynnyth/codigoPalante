@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K. Armando Donado</title>
     <link rel="stylesheet" href="estilos.css" />
-    <link rel="shortcut icon" href="./imagenes/pexels-max-bender-7225266.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./imagenes/Diseño sin título.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <script
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <script>
       src="https://kit.fontawesome.com/c1952e4016.js"
       crossorigin="anonymous"
-    ></script>
+    </script>
+    <script src="https://kit.fontawesome.com/c1952e4016.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -23,11 +25,20 @@
           <img class="logo" src="./imagenes/25475221_transparent.png" alt="logo"
         /></a>
       </div>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="https://api.whatsapp.com/send?phone=">Contacto</a>
+      <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav" id="nav">
+         <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="nav-list">
+
+        <li> <a class="barra" href="index.html">Inicio</a></li>
+        <li></li><a class="barra" href="https://api.whatsapp.com/send?phone=">Contacto</a></li>
+      </ul>
       </nav>
+      
     </header>
+    <div id="container">
+      <div class="toggle"></div>
+    </div>
     <main>
       <section class="section1">
         <img
@@ -41,13 +52,7 @@
       </section>
       <h1>Hola! Soy K. Armando Donado</h1>
       <p class="primerP">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-        tempora doloremque odit quos assumenda quod! Adipisci non corrupti
-        nostrum porro debitis minus placeat, possimus maxime minima quam totam.
-        Quas, dicta? Dolore nobis repellat eveniet quasi doloribus accusamus
-        deleniti qui. Ut quos laudantium praesentium qui rerum necessitatibus
-        nihil animi, perspiciatis similique dolore provident voluptatibus magnam
-        sit. Odit quibusdam repudiandae nulla vitae.
+       Mi nombre es <span> Keeynnyth Armando Donado Changarotty</span>, soy de Venezuela y vivo en Buenos Aires, Argentina hace un par de años. Soy Abogado de profesion y un amante del baloncesto que decidio dar un vuelco total a su perfil laboral, iniciandose en este innovador y entusiasta mundo IT.
       </p>
 
       <div class="descarga"><a id="boton" href="">Descargar CV</a></div>
@@ -56,10 +61,8 @@
         <h3>Hablemos!</h3>
         <br />
         <p class="segundoP">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sit
-          quaerat asperiores sapiente placeat, inventore ipsum aspernatur minus
-          eveniet, facere delectus, rem fugiat beatae. Ab itaque voluptate id
-          inventore eveniet.
+           Debo comentar que estoy muy agradecido con el equipo de 
+           <span>CODIGO PA LANTE </span> por brindarnos esta gran y amena oportunidad de introducirnos en lo que es desarrollo web; han sido unos interesantes y enriquecidores primeros pasos que no tengo dudas nos habra servido de base para poder profundizar en nuestra formacion. Muchas gracias!
         </p>
       </section>
       <div class="iconos">
@@ -69,7 +72,7 @@
         <a href="https://github.blog/">
           <img src="./imagenes/github.png" width="40px" alt="" />
         </a>
-        <a href="https://www.linkedin.com/">
+        <a href="https://www.linkedin.com/in/karmandodonado/">
           <img src="./imagenes/linkedin.png" width="40px" alt=""
         /></a>
       </div>
@@ -83,5 +86,7 @@
         >
       </p>
     </footer>
+    <script src="./menu.js"></script>
+    <script src="./dark.js"></script>
   </body>
 </html>
