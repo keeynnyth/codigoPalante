@@ -334,12 +334,18 @@ span{
            
         }
         li a.barra{
-            margin-left: -40px;
+            margin-left: -30px;
           margin-top: 3px;
             font-size: .7rem;
-            color:rgb(37, 33, 33); 
-           border-color: #fff;
+            color: white;
+            border-color: solid 5px whitesmoke;
+            background-color:rgba(120, 59, 8, 3);
             font-weight: bold;
+            border-radius: 15px;
+        }
+        body.active li a.barra{
+            background-color: transparent;
+            color:chartreuse;
         }
         
     }
