@@ -52,6 +52,8 @@ display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow:1px 1px 8px rgba(120, 59, 8, 3);
+  
+   
  
     
 }
@@ -63,17 +65,27 @@ display: flex;
   
 }
 
-header nav a {
+header nav a  {
+    position: fixed;
     text-decoration: none;
-margin-right: 30px;
+    position: fixed;
+margin-left: -65px;
 
     color: black;
 font-family: Arial, Helvetica, sans-serif;
  
-display: inline-flex;
 
- 
+display: inline-flex;
+justify-content: space-between;
+
+margin-top: -1rem;
+
+ /*posicionamiento del menu*/
+
 }
+
+
+
 
 
 header nav a:hover {
@@ -83,9 +95,9 @@ header nav a:hover {
     padding: 5px;
 }
 
-nav a .barra{
-    margin-right: px;
-}
+
+
+
 
 .logo{
     width: 220px;
@@ -300,7 +312,8 @@ body.active #abrir .abrir-menu .fa-solid fa-bars{
 }
 
 body.active .abrir-menu{
-    color: chartreuse; ;
+    color: chartreuse; 
+
 }
 
 
@@ -313,6 +326,20 @@ span{
     @media (max-width:700px) {
         .imagenCentro{
             width: 75%;
+        }
+        .primerP, p.segundoP{
+            padding:.8rem!important;
+            font-size: 1rem;
+          line-height: 1.5;
+           
+        }
+        li a.barra{
+            margin-left: -40px;
+          margin-top: 3px;
+            font-size: .7rem;
+            color:rgb(37, 33, 33); 
+           border-color: #fff;
+            font-weight: bold;
         }
         
     }

@@ -31,9 +31,15 @@ header{
 
 }
 
-.nav-list a{
+.nav-list a {
     text-decoration: none;
     color: brown;
+  
+   transition:.4s ease all ;
+   
+
+
+    
 }
 
 .abrir-menu,
@@ -43,6 +49,7 @@ header{
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
+  
 }
 
 .abrir-menu{
@@ -88,5 +95,8 @@ header{
     }
     .nav-list a{
         color: aliceblue;
+        font-size: 1rem;
+        text-align: end;
+        margin-right: -80;
     }
 }
